@@ -14,4 +14,9 @@ class Endereco extends Model
     protected $primaryKey = 'cod_endereco';
     protected $fillable = ['cod_cidade', 'rua', 'numero'];
     public $timestamps = false;
+
+    public function cidade()
+    {
+        return $this->hasOne(Cidade::class, 'cod_cidade', 'cod_cidade');
+    }
 }

@@ -10,7 +10,7 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <h1 class="h1">@yield('title')</h1>
+                <h1 class="section-title">@yield('title')</h1>
             </div>
         </div>
         <div class="row">
@@ -79,7 +79,7 @@
                         </div>
                     </div>
                 </fieldset>
-                <fieldset>
+                <fieldset id="fieldset-endereco">
                     <legend>Endereço</legend>
                     <div class="form-group row mt-3">
                         <div class="col-md-8">
@@ -114,7 +114,7 @@
                         </div>
                     </div>
                 </fieldset>
-                <div class="d-flex justify-content-between mt-3 mb-5">
+                <div class="buttons">
                     <a href="{{ route('paciente.index') }}" type="reset" class="btn btn-danger">cancelar</a>
                     <button type="submit" class="btn btn-success">salvar</button>
                 </div>

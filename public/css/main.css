@@ -1,0 +1,164 @@
+:root {
+    --background: #f2f7ff;
+    --text: #020820;
+
+    --darkblue: #202057;
+    --blue: #0082c7;
+
+    --red: #e63946;
+    --gren: #3caea3;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+    color: var(--text);
+
+    height: 100vh;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    background: var(--background);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 1.25rem 2.5rem;
+
+    background: var(--darkblue);
+    
+    color: #fff;
+
+    -webkit-box-shadow: 2px 5px 8px 1px #ffffff;
+    box-shadow: 2px 5px 8px 1px #ffffff;
+}
+
+header h1{
+    font-family: "Nunito", sans-serif;
+}
+
+main {
+    margin: 1.25rem 0;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 1.25rem 0;
+    margin-top: auto;
+
+    background: var(--darkblue);
+    color: #fff;
+}
+
+header img,
+footer img {
+    max-height: 4rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Robot", sans-serif;
+    font-weight: 700;
+}
+
+.btn-primary {
+    background-color: var(--blue);
+    border-color: var(--blue);
+}
+
+.btn-success {
+    background-color: var(--gren);
+    border-color: var(--gren);
+}
+
+.btn-danger {
+    background-color: var(--red);
+    border-color: var(--red);
+}
+
+.section-title {
+    margin-bottom: 2rem;
+    font-size: 4rem;
+    line-height: 1.5;
+    letter-spacing: 3px;
+
+    text-align: center;
+}
+
+.card-title {
+    text-align: center;
+
+    margin-bottom: 1.25rem;
+    padding-bottom: 1.25rem;
+
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.disabled {
+    opacity: 0.7;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+table .buttons {
+    justify-content: center;
+}
+
+.table-responsive {
+    padding-top: 2.5rem;
+}
+
+legend {
+    border-bottom: 1px solid #d8d8d8;
+    padding-bottom: 1.25rem;
+    margin-bottom: 1.25rem;
+
+    font-weight: 600;
+}
+
+legend:last-child {
+    margin-top: 2.5rem;
+}
+
+label {
+    padding-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.form-control {
+    background: none;
+
+    min-height: 2.5rem;
+
+    border: 1px solid var(--blue);
+
+    -webkit-box-shadow: 0px 0px 15px 10px rgba(255, 255, 255, 0.55);
+    box-shadow: 0px 0px 15px 10px rgba(255, 255, 255, 0.55);
+}
+
+.form-check-input{
+    background: none;
+
+    border: 1px solid var(--blue);
+
+    -webkit-box-shadow: 0px 0px 15px 10px rgba(255, 255, 255, 0.55);
+    box-shadow: 0px 0px 15px 10px rgba(255, 255, 255, 0.55);
+}
+
+#fieldset-endereco {
+    margin: 2rem 0;
+}

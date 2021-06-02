@@ -43,7 +43,10 @@
                                     <td>{{ $patient->sexo }}</td>
                                     <td>{{ $patient->cpf }}</td>
                                     <td>{{ $patient->telefone }}</td>
-                                    <td><button type="button" class="btn btn-default">whatever</button></td>
+                                    <td>
+                                        <a href="{{ route('paciente.editar', ['id' => $patient->cod_paciente]) }}" class="btn btn-primary">Editar</a>
+                                        <a href="{{ route('paciente.deletar', ['id' => $patient->cod_paciente]) }}" class="btn btn-danger">Excluir</a>
+                                    </td>
                                 </tr>
                             @endforeach
                         </tbody>

@@ -44,7 +44,7 @@
                         </div>
                         <div class="col">
                             <label for="altura">Altura</label>
-                            <input type="number" id="altura" name="altura" class="form-control" required min="0.5" max="2.5">
+                            <input type="number" id="altura" name="altura" class="form-control" required>
                         </div>
                     </div>
                     <div class="form-group row mt-3">

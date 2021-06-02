@@ -14,13 +14,13 @@
             </div>
         </div>
         <div class="row">
-            <form action="" method="POST">
+            <form action="{{ route('paciente.salvar') }}" method="POST">
                 <fieldset>
                     <legend>Dados de paciente</legend>
                     <div class="form-group row mt-3">
                         <div class="col">
                             <label for="nome">Nome</label>
-                            <input type="text" id="nome" name="nome" class="form-control" required min="3" max="255">
+                            <input type="text" id="nome" name="nome" class="form-control" required min="3" max="255" >
                         </div>
                         <div class="col">
                             <label for="dt_nascimento">Data de nascimento</label>
@@ -51,13 +51,13 @@
                         <div class="col">
                             <label for="sexo">Sexo</label><br>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="sexo" id="flexRadioDefault1">
+                                <input class="form-check-input" type="radio" name="sexo" id="flexRadioDefault1" value="M">
                                 <label class="form-check-label" for="flexRadioDefault1">
                                     M
                                 </label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="sexo" id="flexRadioDefault1">
+                                <input class="form-check-input" type="radio" name="sexo" id="flexRadioDefault1" value="F">
                                 <label class="form-check-label" for="flexRadioDefault1">
                                     F
                                 </label>
@@ -99,6 +99,10 @@
                         </div>
                     </div>
                 </fieldset>
+                <div class="d-flex justify-content-between mt-3 mb-5">
+                    <a href="{{ route('paciente.index') }}" type="reset" class="btn btn-danger">cancelar</a>
+                    <button type="submit" class="btn btn-success">salvar</button>
+                </div>
             </form>
         </div>
     </div>

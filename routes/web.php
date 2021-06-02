@@ -4,10 +4,10 @@
 
 $router->get('/', 'HomeController@index');
 
-
 $router->group(['prefix' => 'paciente'], function () use ($router) {
-    $router->get('/', 'PatientController@index');
+    $router->get('/', ['as' => 'paciente.index', 'uses' => 'PatientController@index']);
     $router->get('/novo', ['as' => 'paciente.novo', 'uses' => 'PatientController@create']);
+    $router->post('/novo', ['as' => 'paciente.salvar', 'uses' => 'PatientController@store']);
 });
 
 $router->group(['prefix' => 'estado'], function () use ($router) {

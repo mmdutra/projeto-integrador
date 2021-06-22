@@ -3,7 +3,13 @@
 @section('title', 'Editar Paciente')
 
 @push('scripts')
+    <script src="https://unpkg.com/imask"></script>
     <script type="text/javascript" src="{{ app('url')->asset('js/selectCityByState.js') }}"></script>
+    <script type="text/javascript" src="{{ app('url')->asset('js/createMask.js') }}"></script>
+    <script>;
+        createMask(document.getElementById('cpf'), '000.000.000-00')
+        createMask(document.getElementById('telefone'), '(00) 00000-0000')
+    </script>
 @endpush
 
 @section('content')

@@ -9,6 +9,15 @@
     --gren: #3caea3;
 }
 
+body,
+html {
+    overflow-x: hidden;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Nunito", sans-serif;
     color: var(--text);
@@ -161,4 +170,26 @@ label {
 
 #fieldset-endereco {
     margin: 2rem 0;
+}
+
+
+@media (max-width: 767px){
+    .card{
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 540px){
+    header{
+        display: block;
+        text-align: center;
+    }
+
+    header img{
+        max-height: 3rem;
+    }
+
+    .section-title{
+        font-size: 3rem;
+    }
 }
